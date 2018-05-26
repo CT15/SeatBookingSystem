@@ -1,0 +1,6 @@
+framework module Pods_SeatBookingSystem {
+  umbrella header "Pods-SeatBookingSystem-umbrella.h"
+
+  export *
+  module * { export * }
+}
