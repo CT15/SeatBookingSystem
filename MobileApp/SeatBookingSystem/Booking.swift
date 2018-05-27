@@ -17,7 +17,7 @@ class Booking {
 
     private static let defaults = UserDefaults.standard
 
-    static let timeLimit = 15   // seconds
+    static let timeLimit = 20   // seconds
 
     static var hasBooked: Bool {
         set(value) {

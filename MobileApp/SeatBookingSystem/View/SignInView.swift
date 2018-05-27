@@ -14,6 +14,7 @@ protocol SignInViewDelegate: class {
 
 class SignInView: UIView {
 
+    var title: UILabel!
     var nameField: UITextField!
     var passwordField: UITextField!
 
@@ -33,6 +34,18 @@ class SignInView: UIView {
     }
 
     private func setFields() {
+        title = UILabel(frame: .zero)
+        title.text = "SeatSeekr!"
+        title.translatesAutoresizingMaskIntoConstraints = false
+        title.font = UIFont.boldSystemFont(ofSize: 40)
+        title.textAlignment = .center
+        title.numberOfLines = 0
+        addSubview(title)
+        title.widthAnchor.constraint(equalTo: widthAnchor, constant: -30).isActive = true
+        title.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        title.topAnchor.constraint(equalTo: topAnchor, constant: 150).isActive = true
+        title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
+        
         nameField = CustomTextField(frame: .zero, placeholder: "Input username")
         addSubview(nameField)
         nameField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true

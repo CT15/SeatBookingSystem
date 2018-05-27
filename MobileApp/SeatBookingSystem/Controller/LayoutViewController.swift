@@ -16,6 +16,7 @@ class LayoutViewController: UIViewController {
     var seatColor: UIColor = .black {
         didSet {
             (view as! LayoutView).seatButton.backgroundColor = seatColor
+            (view as! LayoutView).seat2Button.backgroundColor = #colorLiteral(red: 0.9104084373, green: 0.2412661016, blue: 0.3545298576, alpha: 1)
         }
     }
 
@@ -49,6 +50,9 @@ class LayoutViewController: UIViewController {
 }
 
 extension LayoutViewController: LayoutViewDelegate {
+    func didPressSeat2Button() {
+        DialogHelper.showInfo(in: self, title: "Seat 2", message: "This seat is currently OCCUPIED")
+    }
 
     func didPressBackButton() {
         dismiss(animated: true)
@@ -103,7 +107,8 @@ extension LayoutViewController: LayoutViewDelegate {
             let year = calendar.component(.year, from: date)
             let hour = calendar.component(.hour, from: date)
             let minutes = calendar.component(.minute, from: date)
-            Booking.timing = "\(day)/\(month)/\(year) " + String(format: "%02i:%02i", hour, minutes)
+            let seconds = calendar.component(.second, from: date)
+            Booking.timing = "\(day)/\(month)/\(year) " + String(format: "%02i:%02i:%02i", hour, minutes, seconds)
 
             self.ref.child("startTime").setValue(ServerValue.timestamp())
 

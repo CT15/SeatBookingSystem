@@ -28,6 +28,7 @@ class BookingViewController: UIViewController {
     }
 
     private func runTimer() {
+        (view as! BookingView).timerLabel.textColor = .black
         seconds = Booking.timeLimit + 1
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
@@ -50,6 +51,14 @@ class BookingViewController: UIViewController {
                     }
                 } else {
                     DialogHelper.showInfo(in: self, title: "Notification", message: "Your seat booking confirmation has expired.")
+                    var firstTime = true
+                    self.ref.child("startTime").observe(DataEventType.value, with: { (snapshot) in
+                        if firstTime {
+                            firstTime = false
+                            return
+                        }
+                        self.runTimer()
+                    })
                 }
             }
         } else {
