@@ -12,7 +12,7 @@ A project done within 24 hours during NUS IEEE Hackathon 2018. The topic given w
 
 * To ease the process of seat searching during the examination periods, eliminating completely the need to travel in the process of finding out whether seats are available in any particular places within the campus.
 
-* To promote a better "no-seat-hogging" culture within the campus.
+* To promote a better study culture within the campus (no more seat hogging!).
 
 ## Our Solution
 
