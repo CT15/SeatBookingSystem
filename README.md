@@ -35,3 +35,7 @@ The slides for the final presentation can be found [here](https://docs.google.co
 [Li Jiayao](https://github.com/JYL123)
 
 Li Xinyi
+
+## Reflection
+
+The NUS IEEE Hackathon 2018 was the first hackathon experience for all of us. It was definitely very fun albeit a tiring experience. Personally, I felt that I had accomplised so much within a very short period of time. It piqued my interest to join more hackathons in the future!
