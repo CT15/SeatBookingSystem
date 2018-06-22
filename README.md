@@ -34,7 +34,7 @@ The slides for the final presentation can be found [here](https://docs.google.co
 
 [Li Jiayao](https://github.com/JYL123)
 
-Li Xinyi
+[Li Xinyi](https://github.com/xinyi9541)
 
 ## Reflection
 
