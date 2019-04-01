@@ -39,3 +39,7 @@ The slides for the final presentation can be found [here](https://docs.google.co
 ## Reflection
 
 The NUS IEEE Hackathon 2018 was the first hackathon experience for all of us. It was definitely very fun albeit a tiring experience. Personally, I felt that I had accomplised so much within a very short period of time. It piqued my interest to join more hackathons in the future!
+
+## And ...
+
+It becomes an [April Fool's joke](https://www.instagram.com/p/BvskkuxFK9d/)! 😝
